@@ -5,6 +5,13 @@ public class Person {
     String lastName;
     MyDate birthday;
 
+
+    public Person(String firstName, String lastName, MyDate birthday){
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.birthday=birthday;
+    }
+
     public void print(){
         System.out.println(firstName + " " + lastName);
         birthday.print();
@@ -15,6 +22,10 @@ public class Person {
 
     public  int getAge(){
         return 2022-birthday.year;
+    }
+
+    public void doWork(){
+        System.out.println("I don't know how  I work");
     }
 
 
